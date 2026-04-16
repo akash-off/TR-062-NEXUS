@@ -1,8 +1,5 @@
 from fastapi import FastAPI
-from app.main import app as main_app
+from app.main import app as backend_app
 
-app = main_app
-
-@app.get("/")
-def root():
-    return {"message": "5G AI Backend Running 🚀"}
+# Vercel expects this variable name
+app = backend_app
