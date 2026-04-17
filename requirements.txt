@@ -1,11 +1,11 @@
-# Root requirements - points to backend
-# Install backend dependencies:
-# pip install -r backend/requirements.txt
+# Root requirements
+# For development, install from api/requirements.txt
+# pip install -r api/requirements.txt
 
-fastapi
-uvicorn
-pandas==2.1.1
+fastapi==0.104.1
+uvicorn==0.24.0
+pydantic==2.5.0
+pandas==2.0.3
 numpy>=1.26.0
-scikit-learn
-httpx
-torch
+httpx==0.25.1
+python-dotenv==1.0.0
